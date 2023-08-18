@@ -1,0 +1,13 @@
+.home {
+    /* background-color: antiquewhite; */
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color: rgb(231, 24, 24);
+    color: white
+}

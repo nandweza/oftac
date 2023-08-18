@@ -19,3 +19,16 @@ html, body {
   margin: 0;
   overflow-x: hidden;
 }
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.section-bg {
+  background-color: antiquewhite;
+  padding: 5% 2%;
+}
