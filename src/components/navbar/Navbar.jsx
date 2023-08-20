@@ -1,9 +1,18 @@
 import './navbar.css';
+import Logo from '../../images/oftac.png';
 
 const Navbar = () => {
     return (
-        <nav className="header navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand px-5" href="/">OFTAC</a>
+        <nav className="header navbar navbar-expand-lg navbar-light bg-light py-5">
+            <a className="navbar-brand px-5" href="/">
+                <img 
+                    src={Logo}
+                    alt='oftac logo'
+                    width='90'
+                    height='90'
+                    className='logo'
+                />
+            </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
