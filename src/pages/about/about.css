@@ -3,3 +3,31 @@
     background-size: cover;
     height: 50vh;
 }
+
+.about-header {
+    font-style: italic;
+    color: white;
+    padding-top: 150px;
+}
+
+.about-us {
+    font-style: italic;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
