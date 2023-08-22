@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
+import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 
 function App() {
@@ -24,6 +25,11 @@ function App() {
           exact 
           path='/blog' 
           element={<Blog />} 
+        />
+        <Route 
+          exact
+          path='/projects'
+          element={<Projects />}
         />
         <Route 
           exact 
