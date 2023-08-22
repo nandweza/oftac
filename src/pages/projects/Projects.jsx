@@ -16,7 +16,7 @@ const Projects = () => {
                     <h2 className='about-header'>Our Projects</h2>
                 </div>
             </div>
-            <div className='projects'>
+            <div className='projects pb-5'>
                 <div className='container'>
                     <div className='text-center p-5'>
                         <h2 >Our Projects</h2>

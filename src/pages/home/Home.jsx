@@ -22,7 +22,7 @@ const Home = () => {
                     </p>
                     <div className=''>
                         <button className='p-2'>ABOUT US</button>
-                        <button className='p-2 mx-2 contact-btn'>CONTACT US</button>
+                        <button className='p-2 mx-2 contact-btn'>SUPPORT OFTAC</button>
                     </div>
                 </div>
             </div>
