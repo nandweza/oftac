@@ -3,3 +3,15 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
+
+.footer-grid a {
+    color: var(--main-black);
+}
+
+.footer-grid a:hover {
+    color: var(--main-red);
+}
+
+footer a {
+    color: var(--main-black);
+}

@@ -1,13 +1,23 @@
-.home {
-    /* background-color: antiquewhite; */
+/* .home {
+    background-image: url('');
+} */
+
+.home h1 {
+    color: var(--main-red);
+    text-shadow: 4px 4px 4px var(--main-black);
 }
 
-button {
+.home p {
+    font-style: italic;
+}
+
+.home button {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.contact-btn {
-    background-color: rgb(231, 24, 24);
-    color: white
+.home .about-btn {
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+    background: transparent;
 }

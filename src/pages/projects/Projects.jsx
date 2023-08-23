@@ -2,8 +2,8 @@ import './projects.css';
 import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
 
-import beeKeeping from '../../images/bee-keeping.jpg';
-import Image1 from '../../images/class.jpg';
+import beeKeeping from '../../assets/bee-keeping.jpg';
+import Image1 from '../../assets/class.jpg';
 
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
@@ -16,10 +16,10 @@ const Projects = () => {
                     <h2 className='about-header'>Our Projects</h2>
                 </div>
             </div>
-            <div className='projects pb-5'>
+            <div className='section-bg projects pb-5'>
                 <div className='container'>
                     <div className='text-center p-5'>
-                        <h2 >Our Projects</h2>
+                        <h3 >Our Projects</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Maxime mollitia, molestiae quas vel sint commodi repudiandae
@@ -37,7 +37,7 @@ const Projects = () => {
                                     />
                                 </div>
                                 <div className='col-lg-6 col-sm-12 p-2'>
-                                    <h3>Bee Keeping</h3>
+                                    <h4>Bee Keeping</h4>
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Aperiam adipisci animi quaerat in dicta unde earum labore 
@@ -68,7 +68,7 @@ const Projects = () => {
                                     />
                                 </div>
                                 <div className='col-lg-6 col-sm-12 p-2'>
-                                    <h3>Education</h3>
+                                    <h4>Education</h4>
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Aperiam adipisci animi quaerat in dicta unde earum labore 

@@ -21,3 +21,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+.navbar-nav .nav-link .donate-btn {
+    font-weight: bold;
+}

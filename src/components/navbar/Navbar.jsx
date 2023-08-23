@@ -1,5 +1,5 @@
 import './navbar.css';
-import Logo from '../../images/oftac.png';
+import Logo from '../../assets/oftac.png';
 
 const Navbar = () => {
     return (
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a className="nav-link" href="/#">
-                            <button>
+                            <button className='donate-btn'>
                                 Donate
                             </button>
                         </a>

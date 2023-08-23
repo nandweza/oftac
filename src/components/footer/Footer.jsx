@@ -3,9 +3,10 @@ import './footer.css';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import Logo from '../../images/oftac.png';
+import Logo from '../../assets/oftac.png';
 
 const Footer = () => {
     return (
@@ -13,7 +14,7 @@ const Footer = () => {
             <div class="container">
                 <div className='footer-grid'>
                     <div className='content py-3'>
-                        <h3 className='my-title pb-2'>About Us<span className='title-line'></span></h3>
+                        <h5 className='my-title pb-2'>About Us<span className='title-line'></span></h5>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, 
                             eveniet! Quaerat perferendis perspiciatis, at error debitis fugit eligendi 
@@ -21,31 +22,36 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='content py-3'>
-                        <h3 className='my-title pb-2'>Latest News<span className='title-line'></span></h3>
-                        <h5>Lorem Ipsum <ArrowRightAltIcon /> </h5>
-                        <h5>Lorem Ipsum <ArrowRightAltIcon /> </h5>
-                        <h5>Lorem Ipsum <ArrowRightAltIcon /> </h5>
-                        {/* <h5>Lorem Ipsum <ArrowRightAltIcon /> </h5> */}
+                        <h5 className='my-title pb-2'>Latest News<span className='title-line'></span></h5>
+                        <a href='/#'>
+                            <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
+                        </a>
+                        <a href='/#'>
+                            <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
+                        </a>
+                        <a href='/#'>
+                            <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
+                        </a>
                     </div>
                     <div className='content py-3'>
-                        <h3 className='my-title pb-2'>Quick Links<span className='title-line'></span></h3>
+                        <h5 className='my-title pb-2'>Quick Links<span className='title-line'></span></h5>
                         <div className='row'>
                             <div className='col-lg-6 col-sm-12'>
                                 <ul>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/'>Home</a>
                                     </li>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/about'>About Us</a>
                                     </li>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/projects'>Our Projects</a>
                                     </li>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/blog'>News</a>
                                     </li>
                                 </ul>
@@ -53,15 +59,15 @@ const Footer = () => {
                             <div className='col-lg-6 col-sm-12'>
                                 <ul>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/contact'>Contact Us</a>
                                     </li>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/#'>Privacy Policy</a>
                                     </li>
                                     <li>
-                                        <ChevronRightIcon />
+                                        <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
                                         <a href='/#'>Terms & Conditions</a>
                                     </li>
                                 </ul>
@@ -85,13 +91,24 @@ const Footer = () => {
 
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li class="ms-3">
-                            <FacebookIcon />
+                            <a href='/#'>
+                                <FacebookIcon />
+                            </a>
                         </li>
                         <li class="ms-3">
-                            <LinkedInIcon />
+                            <a href='/#'>
+                                <InstagramIcon />
+                            </a>
                         </li>
                         <li class="ms-3">
-                            <TwitterIcon />
+                            <a href='/#'>
+                                <LinkedInIcon />
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a href='/#'>
+                                <TwitterIcon />
+                            </a>
                         </li>
                     </ul>
                 </footer>

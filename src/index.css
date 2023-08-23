@@ -33,7 +33,40 @@ html, body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-red);
+  text-decoration: underline;
 }
 
 p {
@@ -44,14 +77,18 @@ li {
   list-style-type: none;
 }
 
+button {
+  background-color: var(--main-red);
+  color: var(--main-white);
+  border: 1px solid var(--main-red);
+}
+
 .section-bg {
   background: linear-gradient(180deg, rgb(243, 221, 221) 0%, #F2F2F2 100%);
   padding: 5% 2%;
 }
 
 .my-title {
-  /* font-size: 3rem; */
-  font-weight: bold;
   display: inline-block;
   position: relative;
 }
