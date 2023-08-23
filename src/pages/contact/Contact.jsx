@@ -21,70 +21,72 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='contact container p-5'>
-                <div className='row'>
-                    <div className='col-lg-6 col-sm-12'>
-                        <h2>Get in touch with us...</h2>
-                        <h3>OFTAC</h3>
-                        <p>P.O Box 112, Hoima Uganda</p>
-                        <p>Tel: +256789123456</p>
-                        <p>Email: info@oftac.org</p>
-                    </div>
-                    <div className='col-lg-6 col-sm-12'>
-                        <form action='' method='post'>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input 
-                                            type="text" 
-                                            id="name" 
-                                            name="name" 
-                                            class="form-control p-2" 
-                                            placeholder="Enter your Name" 
-                                        />
+            <div className='section-bg'>
+                <div className='contact container p-5'>
+                    <div className='row'>
+                        <div className='col-lg-6 col-sm-12'>
+                            <h3>Get in touch with us...</h3>
+                            <h4>OFTAC</h4>
+                            <p>P.O Box 112, Hoima Uganda</p>
+                            <p>Tel: +256789123456</p>
+                            <p>Email: info@oftac.org</p>
+                        </div>
+                        <div className='col-lg-6 col-sm-12'>
+                            <form action='' method='post'>
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="form-group">
+                                            <input 
+                                                type="text" 
+                                                id="name" 
+                                                name="name" 
+                                                className="form-control p-2" 
+                                                placeholder="Enter your Name" 
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col">
+                                        <div className="form-group">
+                                            <input 
+                                                type="email" 
+                                                id="email" 
+                                                name="email" 
+                                                className="form-control p-2" 
+                                                placeholder="Enter your Email" 
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input 
-                                            type="email" 
-                                            id="email" 
-                                            name="email" 
-                                            class="form-control p-2" 
-                                            placeholder="Enter your Email" 
-                                        />
-                                    </div>
+                                <div className="col pt-2">
+                                    <input 
+                                        type="text" 
+                                        id="subject" 
+                                        name="subject" 
+                                        className="form-control p-2" 
+                                        placeholder="Subject" 
+                                    />
                                 </div>
-                            </div>
-                            <div class="col pt-2">
-                                <input 
-                                    type="text" 
-                                    id="subject" 
-                                    name="subject" 
-                                    class="form-control p-2" 
-                                    placeholder="Subject" 
-                                />
-                            </div>
-                            <div class="col py-2">
-                                <textarea 
-                                    name="message" 
-                                    id="message" 
-                                    cols="10" 
-                                    rows="5" 
-                                    class="form-control" 
-                                    placeholder="Type your Message"
-                                >
-                                </textarea>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button 
-                                    class="btn btn-primary btn-lg fw-bold" 
-                                    type="submit"
-                                >
-                                    Send Message
-                                </button>
-                            </div> 
-                        </form>
+                                <div className="col py-2">
+                                    <textarea 
+                                        name="message" 
+                                        id="message" 
+                                        cols="10" 
+                                        rows="5" 
+                                        className="form-control" 
+                                        placeholder="Type your Message"
+                                    >
+                                    </textarea>
+                                </div>
+                                <div className="d-grid gap-2">
+                                    <button 
+                                        className="btn btn-primary btn-lg fw-bold" 
+                                        type="submit"
+                                    >
+                                        Send Message
+                                    </button>
+                                </div> 
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

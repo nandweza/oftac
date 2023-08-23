@@ -1,0 +1,9 @@
+.contact button {
+    background-color: var(--main-red);
+    color: var(--main-white);
+    border: none;
+}
+
+.contact button:hover {
+    background-color: var(--main-red);
+}
