@@ -60,6 +60,74 @@ h6 {
   font-weight: normal;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+  }
+  
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  h6 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size: 1.3rem;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  h6 {
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -67,10 +135,6 @@ a {
 a:hover {
   color: var(--main-red);
   text-decoration: underline;
-}
-
-p {
-  font-size: 1.2rem;
 }
 
 li {

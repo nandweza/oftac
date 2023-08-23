@@ -21,7 +21,7 @@ const Footer = () => {
                             adipisci est.
                         </p>
                     </div>
-                    <div className='content py-3'>
+                    <div className='content py-3 smx-screen-mt'>
                         <h5 className='my-title pb-2'>Latest News<span className='title-line'></span></h5>
                         <a href='/#'>
                             <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
@@ -33,10 +33,10 @@ const Footer = () => {
                             <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
                         </a>
                     </div>
-                    <div className='content py-3'>
+                    <div className='content py-3 sm-screen-mt'>
                         <h5 className='my-title pb-2'>Quick Links<span className='title-line'></span></h5>
-                        <div className='row'>
-                            <div className='col-lg-6 col-sm-12'>
+                        <div className='grid-row'>
+                            <div className='grid-col'>
                                 <ul>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
@@ -56,7 +56,7 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className='col-lg-6 col-sm-12'>
+                            <div className='grid-col sm-screen-mt2'>
                                 <ul>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />

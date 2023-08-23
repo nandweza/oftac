@@ -20,6 +20,10 @@
     grid-gap: 2rem;
 }
 
+.md-team {
+    display: none;
+}
+
 .board-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -28,6 +32,83 @@
 
 .partner-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+}
+
+@media (max-width: 991px) {
+    .about {
+        height: 40vh;
+    }
+    .about-header {
+        padding-top: 130px;
+    }
+    .about-us h3 {
+        text-align: center;
+    }
+    .about-us img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .team-grid {
+        display: none;
+    }
+    .ed-img, .md-team img {
+        height: 270px;
+    }
+    .md-team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .board-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .about {
+        height: 35vh;
+    }
+    .about-header {
+        padding-top: 100px;
+    }
+    .about-us h3 {
+        margin-top: -50px;
+    }
+    .about-us img {
+        height: 250px;
+    }
+    .sm-screen-card {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .md-team {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .board-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 470px) {
+    .about {
+        height: 30vh;
+    }
+    .about-header {
+        padding-top: 70px;
+    }
+    .about-us img {
+        height: 200px;
+    }
+    .sm-screen-card {
+        width: 100%;
+    }
+    .board-grid, .partner-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .board-grid img {
+        height: 270px;
+    }
 }

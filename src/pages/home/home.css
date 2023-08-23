@@ -21,3 +21,40 @@
     border: 1px solid var(--main-black);
     background: transparent;
 }
+
+@media (max-width: 991px) {
+    .about-img {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+    .md-screen {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .home h1 {
+        text-shadow: 2px 2px 2px var(--main-black);
+    }
+    .home button {
+        font-size: 1.2rem;
+    }
+    .about-img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 385px) {
+    .home h1 {
+        font-size: 1.8rem;
+    }
+    .home p {
+        font-size: .8rem;
+    }
+    .home button {
+        font-size: .8rem;
+    }
+    .about-img {
+        height: 200px;
+    }
+}

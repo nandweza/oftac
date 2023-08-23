@@ -37,7 +37,9 @@ const Home = () => (
                             src={Pupils}
                             alt=''
                             width='400'
-                            height='400' />
+                            height='400'
+                            className='about-img'
+                        />
                     </div>
                     <div className='col-sm-12 col-lg-6'>
                         <h3 className='text-left my-title pb-2'>About Us<span className='title-line'></span></h3>
@@ -72,7 +74,7 @@ const Home = () => (
                         Maxime mollitia, molestiae quas vel sint
                     </h6>
                 </div>
-                <div className='col-lg-4 col-md-6 col-sm-12'>
+                <div className='col-lg-4 col-md-6 col-sm-12 md-screen'>
                     <RemoveRedEyeIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
                     <h5>Our Vision</h5>
                     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
