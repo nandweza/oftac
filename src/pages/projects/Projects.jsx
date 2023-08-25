@@ -17,7 +17,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className='section-bg projects pb-5'>
-                <div className='container'>
+                <div className=''>
                     <div className='text-center p-5'>
                         <h3 >Our Projects</h3>
                         <p>
@@ -32,23 +32,21 @@ const Projects = () => {
                                     <img 
                                         src={beeKeeping}
                                         alt=''
-                                        width='500'
+                                        width='100%'
                                         height='100%'
                                     />
                                 </div>
                                 <div className='col-lg-6 col-sm-12 p-2'>
-                                    <h4>Bee Keeping</h4>
-                                    <p>
+                                    <h4 className='px-2'>Bee Keeping</h4>
+                                    <p className='p-2'>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Aperiam adipisci animi quaerat in dicta unde earum labore 
                                         dignissimos ea ipsum facilis consequatur possimus, alias 
                                         debitis, magni ducimus nostrum saepe eos.
                                     </p>
-                                    <p>
+                                    <p className='p-2'>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Aperiam adipisci animi quaerat in dicta unde earum labore 
-                                        dignissimos ea ipsum facilis consequatur possimus, alias 
-                                        debitis, magni ducimus nostrum saepe eos.
+                                        Aperiam adipisci animi quaerat in dicta unde earum labore.
                                     </p>
                                     <span className='p-2'>
                                         Read More <ArrowRightAltIcon />
@@ -63,19 +61,19 @@ const Projects = () => {
                                     <img 
                                         src={Image1}
                                         alt=''
-                                        width='500'
+                                        width='100%'
                                         height='100%'
                                     />
                                 </div>
                                 <div className='col-lg-6 col-sm-12 p-2'>
-                                    <h4>Education</h4>
-                                    <p>
+                                    <h4 className='px-2'>Education</h4>
+                                    <p className='p-2'>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Aperiam adipisci animi quaerat in dicta unde earum labore 
                                         dignissimos ea ipsum facilis consequatur possimus, alias 
                                         debitis, magni ducimus nostrum saepe eos.
                                     </p>
-                                    <p>
+                                    <p className='p-2'>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Aperiam adipisci animi quaerat in dicta unde earum labore 
                                         dignissimos ea ipsum facilis consequatur possimus, alias 

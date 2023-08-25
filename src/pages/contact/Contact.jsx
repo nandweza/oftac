@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="mapouter">
                     <div className="gmap_canvas">
                         <iframe
-                            title="This is a map"
+                            title="Kyangwali map"
                             width="100%" 
                             height="400" 
                             id="gmap_canvas" 
