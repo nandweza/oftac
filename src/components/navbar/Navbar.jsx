@@ -3,6 +3,7 @@ import Logo from '../../assets/oftac.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link to='/' className="navbar-brand px-5">

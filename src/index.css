@@ -152,6 +152,12 @@ button {
   padding: 5% 2%;
 }
 
+@media (max-width: 767px) {
+  .section-bg {
+    padding: 2% 0;
+  }
+}
+
 .my-title {
   display: inline-block;
   position: relative;
