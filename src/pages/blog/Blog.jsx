@@ -9,7 +9,7 @@ const Blog = () => {
     return (
         <div>
             <Navbar />
-            <div className='section-bg'>
+            <div className='section-bg blog'>
                 <div className='container blog-grid'>
                     <div className='card'>
                         <img 

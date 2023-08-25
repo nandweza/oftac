@@ -9,8 +9,8 @@ const About = () => {
     return (
         <div>
             <Navbar />
-            <div className='about'>
-                <div className='d-flex justify-content-center align-items-center'>
+            <div className='about d-flex justify-content-center align-items-center'>
+                <div className=''>
                     <h2 className='about-header'>About OFTAC</h2>
                 </div>
             </div>

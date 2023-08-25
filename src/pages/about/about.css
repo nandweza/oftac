@@ -1,13 +1,12 @@
 .about {
     background-image: url('../../assets/bg.jpg');
     background-size: cover;
-    height: 50vh;
+    height: 70vh;
 }
 
 .about-header {
     font-style: italic;
     color: white;
-    padding-top: 150px;
 }
 
 .about-us {
@@ -37,12 +36,12 @@
 }
 
 @media (max-width: 991px) {
-    .about {
+    /* .about {
         height: 40vh;
     }
     .about-header {
         padding-top: 130px;
-    }
+    } */
     .about-us h3 {
         text-align: center;
     }
@@ -68,12 +67,12 @@
 }
 
 @media (max-width: 767px) {
-    .about {
+    /* .about {
         height: 35vh;
     }
     .about-header {
         padding-top: 100px;
-    }
+    } */
     .about-us h3 {
         margin-top: -50px;
     }
@@ -93,12 +92,12 @@
 }
 
 @media (max-width: 470px) {
-    .about {
+    /* .about {
         height: 30vh;
     }
     .about-header {
         padding-top: 70px;
-    }
+    } */
     .about-us img {
         height: 200px;
     }
