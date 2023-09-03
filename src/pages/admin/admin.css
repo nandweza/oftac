@@ -1,0 +1,52 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Adjust this as needed */
+}
+
+.adminContent {
+    display: flex;
+    flex: 1;
+}
+
+.adminPanel {
+    flex: 1;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.date {
+    text-align: end;
+    padding-right: 20px;
+}
+
+.middlePanel {
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.gridItem h6 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gridPanel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.panelIcon {
+    font-size: 4rem !important;
+}
+
+.moneyIcon {
+    font-size: 1.8rem !important;
+}
+
+.gridContent {
+    font-size: 1.5rem;
+    padding-left: 5px;
+}

@@ -6,6 +6,8 @@ import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
+import Login from './pages/login/Login';
+import Admin from './pages/admin/Admin';
 
 function App() {
   return (
@@ -35,6 +37,16 @@ function App() {
           exact 
           path='/contact' 
           element={<Contact />} 
+        />
+        <Route
+          exact
+          path='/login'
+          element={<Login />}
+        />
+        <Route 
+          exact
+          path='/admin'
+          element={<Admin />}
         />
       </Routes>
     </Router>
