@@ -1,7 +1,7 @@
 .admin {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Adjust this as needed */
+    height: 100vh;
 }
 
 .adminContent {
@@ -49,4 +49,8 @@
 .gridContent {
     font-size: 1.5rem;
     padding-left: 5px;
+}
+
+.bottomPanel {
+    color: black;
 }

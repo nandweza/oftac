@@ -1,5 +1,6 @@
 import React from "react";
 import "./topbar.css";
+import Logo from '../../assets/oftac.png';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import LanguageIcon from '@mui/icons-material/Language';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -9,7 +10,16 @@ export default function Topbar() {
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">OFTAC</span>
+                    <span className="logo">
+                        <img 
+                            src={Logo}
+                            alt="oftac logo"
+                            width="70"
+                            height="70"
+                            className="p-2"
+                        />
+                        OFTAC, ORG
+                    </span>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">

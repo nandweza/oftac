@@ -5,6 +5,9 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import AttachMoneySharpIcon from '@mui/icons-material/AttachMoneySharp';
 import AccountTreeSharpIcon from '@mui/icons-material/AccountTreeSharp';
 import ArticleSharpIcon from '@mui/icons-material/ArticleSharp';
+import PostAddIcon from '@mui/icons-material/PostAdd';
+import SettingsIcon from '@mui/icons-material/Settings';
+import { Link } from 'react-router-dom';
 
 const Admin = () => {
     return (
@@ -49,6 +52,34 @@ const Admin = () => {
                                     <ArticleSharpIcon className='panelIcon'/>
                                     <strong className='gridContent'>12 Posts</strong>
                                 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bottomPanel py-5 px-4'>
+                        <div className='gridPanel'>
+                            <div className='card'>
+                                <div className='gridItem p-4 text-center'>
+                                    <PostAddIcon className='panelIcon'/>
+                                    <Link to="/#">
+                                        <h4>Create Project</h4>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className='card'>
+                                <div className='gridItem p-4 text-center'>
+                                    <PostAddIcon className='panelIcon'/>
+                                    <Link to="/#">
+                                        <h4>Create Post</h4>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className='card'>
+                                <div className='gridItem p-4 text-center'>
+                                    <SettingsIcon className='panelIcon'/>
+                                    <Link to="/#">
+                                        <h4>Settings</h4>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

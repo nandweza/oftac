@@ -1,7 +1,6 @@
 import "./sidebar.css";
 import { Link } from "react-router-dom";
 import HomeIcon from '@mui/icons-material/Home';
-import TimelineIcon from '@mui/icons-material/Timeline';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import PostAddIcon from '@mui/icons-material/PostAdd';
@@ -21,12 +20,6 @@ export default function Sidebar() {
                         <li className="sidebarListItem active">
                             <HomeIcon className="sidebarIcon" />
                             Home
-                        </li>
-                        </Link>
-                        <Link to="/#">
-                        <li className="sidebarListItem">
-                            <TimelineIcon className="sidebarIcon" />
-                            Analytics
                         </li>
                         </Link>
                         <Link to="/#">
@@ -89,7 +82,7 @@ export default function Sidebar() {
                         <Link to="/#">
                         <li className="sidebarListItem">
                             <ManageAccountsIcon className="sidebarIcon" />
-                            Manage Profile
+                            My Profile
                         </li>
                         </Link>
                         <Link to="/#">
@@ -98,7 +91,7 @@ export default function Sidebar() {
                             Create User
                         </li>
                         </Link>
-                        <Link to="/#">
+                        <Link to="/login">
                         <li className="sidebarListItem">
                             <LogoutIcon className="sidebarIcon" />
                             Logout
