@@ -21,8 +21,8 @@ const Projects = () => {
                     <div className='text-center p-5'>
                         <h3 >Our Projects</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Maxime mollitia, molestiae quas vel sint commodi repudiandae
+                            <strong>Our Thematic areas:</strong><br />
+                            Livelihood, Technology, Health, Food security and nutrition, Environment
                         </p>
                     </div>
                     <div className='project'>

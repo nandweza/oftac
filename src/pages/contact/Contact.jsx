@@ -27,9 +27,9 @@ const Contact = () => {
                         <div className='col-lg-6 col-sm-12'>
                             <h3>Get in touch with us...</h3>
                             <h4>OFTAC</h4>
-                            <p>P.O Box 112, Hoima Uganda</p>
-                            <p>Tel: +256789123456</p>
-                            <p>Email: info@oftac.org</p>
+                            <p>Kikuube District, Uganda</p>
+                            <p>Tel: +256779948672</p>
+                            <p>Email: oftacorganisation@yahoo.com</p>
                         </div>
                         <div className='col-lg-6 col-sm-12'>
                             <form action='' method='post'>

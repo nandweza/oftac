@@ -91,7 +91,11 @@ const Footer = () => {
 
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li class="ms-3">
-                            <a href='/#'>
+                            <a 
+                                href='https://www.facebook.com/profile.php?id=100095506303376' 
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <FacebookIcon />
                             </a>
                         </li>

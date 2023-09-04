@@ -4,8 +4,8 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import KeyIcon from '@mui/icons-material/Key';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import Footer from '../../components/footer/Footer';
-import Tree from '../../assets/person-planting-tree.jpg';
-import Pupils from '../../assets/class.jpg';
+import beeKeeping from '../../assets/oftac1.jpeg';
+import Oftac2 from '../../assets/oftac2.jpeg';
 
 const Home = () => (
     <div>
@@ -34,10 +34,10 @@ const Home = () => (
                 <div className='row'>
                     <div className='col-sm-12 col-lg-6 text-center'>
                         <img
-                            src={Pupils}
+                            src={Oftac2}
                             alt=''
                             width='400'
-                            height='400'
+                            height='350'
                             className='about-img'
                         />
                     </div>
@@ -63,22 +63,24 @@ const Home = () => (
                 <div className='col-lg-4 col-md-6 col-sm-12'>
                     <RadioButtonCheckedIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
                     <h5>Our Mission</h5>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maxime mollitia, molestiae quas vel sint
+                    <h6>
+                        To mitigate challenges affecting people 
+                        through practical knowledge and skills.
                     </h6>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12'>
-                    <KeyIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
-                    <h5>Our Values</h5>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maxime mollitia, molestiae quas vel sint
+                    <RemoveRedEyeIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
+                    <h5>Our Vision</h5>
+                    <h6>
+                        United, peaceful and self-reliant Communities in Africa
                     </h6>
                 </div>
                 <div className='col-lg-4 col-md-6 col-sm-12 md-screen'>
-                    <RemoveRedEyeIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
-                    <h5>Our Vision</h5>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maxime mollitia, molestiae quas vel sint
+                    <KeyIcon sx={{ fontSize: 70, color: 'rgb(226, 66, 66)' }} />
+                    <h5>Our Values</h5>
+                    <h6>
+                        Community responsibility, Boldness,Unity, 
+                        Gender equality, Honesty and optimisity.
                     </h6>
                 </div>
             </div>
@@ -91,32 +93,31 @@ const Home = () => (
                             Support our Future plans
                         </h3>
                         <h6>
-                            We plan to plant eucalyptus trees (forest) in Kyangwali refugee and
-                            host community in order to improve and freshen the air in the area and
-                            also improve on the climate
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
+                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
+                            dolore natus praesentium.
                         </h6>
                         <p>
-                            We hope in three years time after planting the trees, they can be used
-                            in construction as poles which can also be used to construct classrooms.
-                            We have secured the land but need seedlings to start the planting. Two
-                            seedlings cost USD 1, DONATE A SEEDLING.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
+                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
+                            dolore natus praesentium.
                         </p>
                         <p>
-                            This project is a multi-purpose because it will help to conserve the
-                            environment as well as supporting in boosting the education for
-                            refugee children, that brings us to the next plan of starting a school
-                            There are only 6 schools in Kyangwali refugee camp which has millions
-                            of children who all need to acquire quality education.
-                            You find more than 250 children in a class managed by only one teacher
-                            which is difficult and makes it a need for more schools in the camp.
-                            Planting trees is easiest and cheapest long time project that would
-                            help address the challenge of education in Kyangwali refugee and host
-                            community.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
+                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
+                            dolore natus praesentium.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
+                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
+                            dolore natus praesentium.
                         </p>
                     </div>
                     <div className='col-lg-4 col-sm-12'>
                         <img
-                            src={Tree}
+                            src={beeKeeping}
                             alt=''
                             width='100%'
                             height='400' />
