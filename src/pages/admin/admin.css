@@ -54,3 +54,9 @@
 .bottomPanel {
     color: black;
 }
+
+.no-design {
+    background-color: white;
+    color: rgb(93, 162, 241);
+    border: none;
+}

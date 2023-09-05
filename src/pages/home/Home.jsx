@@ -10,7 +10,7 @@ import Oftac2 from '../../assets/oftac2.jpeg';
 const Home = () => (
     <div>
         <Navbar />
-        <div className="d-flex justify-content-center align-items-center vh-100 home">
+        <div className="d-flex justify-content-center align-items-center vh-100 home pt-5">
             <div className='container text-center'>
                 <h1>Organisation For Transforming<br /> African Communities</h1>
                 <p>

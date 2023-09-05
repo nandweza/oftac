@@ -1,5 +1,6 @@
 import Sidebar from '../../components/sidebar/Sidebar';
 import Topbar from '../../components/topbar/Topbar';
+import FormModal from '../../components/formModal/FormModal';
 import './admin.css';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import AttachMoneySharpIcon from '@mui/icons-material/AttachMoneySharp';
@@ -8,8 +9,39 @@ import ArticleSharpIcon from '@mui/icons-material/ArticleSharp';
 import PostAddIcon from '@mui/icons-material/PostAdd';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const Admin = () => {
+    const [date, setDate] = useState('');
+	const [time, setTime] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [formType, setFormType] = useState('project');
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			const currentDate = new Date();
+			
+			const newDate = currentDate.toDateString();
+			const newTime = currentDate.toLocaleTimeString();
+
+			setDate(newDate);
+			setTime(newTime);
+		}, 1000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	}, []);
+
+    const openModal = (type) => {
+        setFormType(type);
+        setIsModalOpen(true);
+    };
+    
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className='admin'>
             <Topbar />
@@ -24,8 +56,8 @@ const Admin = () => {
                             </div>
                             <div className='col-lg-6 col-md-6 col-sm-12'>
                                 <div className='date'>
-                                    <h5>7:58:01PM</h5>
-                                    <p>March 17th, 2023</p>
+                                    <h5>{time}</h5>
+                                    <p>{date}</p>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +92,7 @@ const Admin = () => {
                             <div className='card'>
                                 <div className='gridItem p-4 text-center'>
                                     <PostAddIcon className='panelIcon'/>
-                                    <Link to="/#">
+                                    <Link onClick={() => openModal('project')}>
                                         <h4>Create Project</h4>
                                     </Link>
                                 </div>
@@ -68,7 +100,7 @@ const Admin = () => {
                             <div className='card'>
                                 <div className='gridItem p-4 text-center'>
                                     <PostAddIcon className='panelIcon'/>
-                                    <Link to="/#">
+                                    <Link onClick={() => openModal('blog')}>
                                         <h4>Create Post</h4>
                                     </Link>
                                 </div>
@@ -85,6 +117,7 @@ const Admin = () => {
                     </div>
                 </div>
             </div>
+            <FormModal isOpen={isModalOpen} closeModal={closeModal} formType={formType} />
         </div>
     )
 }

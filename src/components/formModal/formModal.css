@@ -1,0 +1,33 @@
+.custom-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 100px 300px;
+    position: relative;
+}
+  
+.project-modal {
+    width: 60%;
+    height: 500px;
+}
+  
+.blog-modal {
+    width: 60%;
+    height: 500px;
+} 
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed to position the button vertically */
+    right: 10px; /* Adjust as needed to position the button horizontally */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000; /* Set the color you prefer */
+    padding: 5px 10px; /* Add padding for spacing */
+    z-index: 1; /* Ensure the button appears above the modal content */
+  }
+  

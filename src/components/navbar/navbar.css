@@ -22,6 +22,10 @@
     padding-left: 1rem;
 }
 
+.navbar-nav .nav-link:hover {
+    color: var(--main-red);
+}
+
 .navbar-nav .nav-link .donate-btn {
     font-weight: bold;
 }
