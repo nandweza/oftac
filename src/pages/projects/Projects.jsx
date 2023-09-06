@@ -50,7 +50,7 @@ const Projects = () => {
                                     <div className='col-lg-6 col-sm-12 p-2'>
                                         <h4 className='px-2'>{project.title}</h4>
                                         <p className='p-2'>{project.content}</p>
-                                        <a href={`/project/${project._id}`} className='p-2'>
+                                        <a href={`/#/project/${project._id}`} className='p-2'>
                                             Read More <ArrowRightAltIcon />
                                         </a>
                                     </div>
