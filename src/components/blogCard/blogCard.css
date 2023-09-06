@@ -1,0 +1,26 @@
+.blog-grid {
+    padding-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+@media (max-width: 991px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15% 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-grid {
+        padding-top: 30%;
+    }
+}

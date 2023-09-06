@@ -4,4 +4,30 @@
 
 .projectDetail .container {
     margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@media (max-width: 767px) {
+    .projectDetail .container {
+        margin-top: 18%;
+    }
+}
+
+@media (max-width: 520px) {
+    .projectDetail .container {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    .projectDetail .container {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 300px) {
+    .projectDetail .container {
+        margin-top: 43%;
+    }
 }

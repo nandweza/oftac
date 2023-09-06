@@ -11,6 +11,7 @@ import Admin from './pages/admin/Admin';
 import ListProjects from './pages/listProjects/ListProjects';
 import ListPosts from './pages/listPosts/ListPosts';
 import ProjectDetail from './pages/projectDetail/ProjectDetail';
+import PostDetail from './pages/blogDetail/BlogDetail';
 import PrivateRoute from './components/PrivateRoute';
 import { useState, useEffect } from 'react';
 
@@ -53,18 +54,22 @@ function App() {
                     element={<Blog />} 
                 />
                 <Route 
+                    path="/news/:postId" 
+                    element={<PostDetail />}
+                />
+                <Route 
                     exact
                     path='/project'
                     element={<Projects />}
                 />
                 <Route 
+                    path="/project/:projectId" 
+                    element={<ProjectDetail />} 
+                />
+                <Route 
                     exact 
                     path='/contact' 
                     element={<Contact />} 
-                />
-                <Route 
-                    path="/project/:projectId" 
-                    element={<ProjectDetail />} 
                 />
                 <Route
                     exact
