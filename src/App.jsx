@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/Home';
 import About from './pages/about/About';
@@ -45,7 +45,7 @@ function App() {
                 <Route 
                     exact 
                     path='/about' 
-                    element={<About />} 
+                    element={<About />}
                 />
                 <Route 
                     exact 
