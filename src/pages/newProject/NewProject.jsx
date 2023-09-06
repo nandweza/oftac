@@ -29,6 +29,7 @@ const NewProject = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
     
+        console.log('Form Data:', formData);
         const formDataToSend = new FormData();
         // Append all form data including the image to the FormData object
         for (const key in formData) {
@@ -36,7 +37,13 @@ const NewProject = () => {
         }
     
         try {
-            const response = await axios.post('https://oftac-backend.onrender.com/api/project', formDataToSend);
+            // const response = await axios.post('https://oftac-backend.onrender.com/api/project', formDataToSend);
+            const response = await axios.post('https://oftac-backend.onrender.com/api/project', formDataToSend, {
+                headers: {
+                    'Content-Type': 'multipart/form-data', // Make sure the content type is set correctly
+                },
+            });
+
     
             // Handle success, reset the form, or navigate to another page
             console.log('Project added:', response.data);

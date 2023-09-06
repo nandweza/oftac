@@ -3,7 +3,7 @@ import axios from 'axios';
 import './projects.css';
 import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ProjectCard from '../../components/projectCard/ProjectCard';
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -15,6 +15,7 @@ const Projects = () => {
                 setProjects(response.data.projects);
             } catch (error) {
                 console.error('Error fetching projects:', error);
+                console.log(error.response);
             }
         };
 
@@ -41,23 +42,8 @@ const Projects = () => {
                     </div>
 
                     {projects.map((project) => (
-                        <div className='project' key={project._id}>
-                            <div className='card mx-5'>
-                                <div className='row'>
-                                    <div className='col-lg-6 col-sm-12'>
-                                        <img src={`https://oftac-backend.onrender.com/uploads/${project.img}`} alt='' width='100%' height='100%' />
-                                    </div>
-                                    <div className='col-lg-6 col-sm-12 p-2'>
-                                        <h4 className='px-2'>{project.title}</h4>
-                                        <p className='p-2'>{project.content}</p>
-                                        <a href={`/#/project/${project._id}`} className='p-2'>
-                                            Read More <ArrowRightAltIcon />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                        </div>
+                        // Use the ProjectCard component to display project details
+                        <ProjectCard key={project._id} project={project} />
                     ))}
                 </div>
             </div>

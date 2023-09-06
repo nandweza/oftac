@@ -20,7 +20,7 @@ const Home = () => (
                     they are facing and the community at large.
                 </p>
                 <div className=''>
-                    <a href='/about'>
+                    <a href='/#/about'>
                         <button className='p-2 about-btn'>ABOUT US</button>
                     </a>
                     <a href='/#'>
@@ -51,7 +51,7 @@ const Home = () => (
                             children, many children dropped out of school due to hunger and poverty
                             hence losing hope for future.
                         </p>
-                        <a href='/about'>
+                        <a href='/#/about'>
                             <button className='p-2 fw-bold'>Read More</button>
                         </a>
                     </div>

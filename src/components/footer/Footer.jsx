@@ -44,15 +44,15 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
-                                        <a href='/about'>About Us</a>
+                                        <a href='/#/about'>About Us</a>
                                     </li>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
-                                        <a href='/projects'>Our Projects</a>
+                                        <a href='/#/projects'>Our Projects</a>
                                     </li>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
-                                        <a href='/blog'>News</a>
+                                        <a href='/#/news'>News</a>
                                     </li>
                                 </ul>
                             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />
-                                        <a href='/contact'>Contact Us</a>
+                                        <a href='/#/contact'>Contact Us</a>
                                     </li>
                                     <li>
                                         <ChevronRightIcon sx={{ fontSize: 20, color: 'rgb(226, 66, 66)' }} />

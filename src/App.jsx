@@ -49,7 +49,7 @@ function App() {
                 />
                 <Route 
                     exact 
-                    path='/blog' 
+                    path='/news' 
                     element={<Blog />} 
                 />
                 <Route 
