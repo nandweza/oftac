@@ -6,7 +6,7 @@ import Footer from '../../components/footer/Footer';
 import Onen from '../../assets/Onen.png';
 import Samuel from '../../assets/Samuel.png';
 import Partner from '../../assets/partner.png';
-import Oftac2 from '../../assets/oftac2.jpeg';
+import Oftac2 from '../../assets/oftacAbt.jpeg';
 
 const About = () => {
     return (
@@ -60,9 +60,9 @@ const About = () => {
                     <div className='col-lg-8 col-md-6 col-sm-12'>
                         <h4>Management</h4>
                         <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat.
+                            The Management Team of the Organization for Transforming African Communities 
+                            (OFTAC) is a cohesive group of seasoned professionals dedicated to catalyzing 
+                            positive change and sustainable development throughout Africa.
                         </p>
                         <div className='team-grid'>
                             <div className='card'>

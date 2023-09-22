@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
-import NewProject from '../../pages/newProject/NewProject' // Your project form component
-import NewBlogPost from '../../pages/newBlogPost/NewBlogPost';// Your blog form component
+import NewProject from '../../pages/newProject/NewProject';
+import NewBlogPost from '../../pages/newBlogPost/NewBlogPost';
 import './formModal.css';
 import CloseIcon from '@mui/icons-material/Close';
 

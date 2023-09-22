@@ -16,9 +16,8 @@ const Footer = () => {
                     <div className='content py-3'>
                         <h5 className='my-title pb-2'>About Us<span className='title-line'></span></h5>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, 
-                            eveniet! Quaerat perferendis perspiciatis, at error debitis fugit eligendi 
-                            adipisci est.
+                            In 2016, Uganda suffered from extreme poverty, diseases and the price of 
+                            food on the national market increased which got refugees ...
                         </p>
                     </div>
                     <div className='content py-3 smx-screen-mt'>

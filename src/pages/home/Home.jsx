@@ -4,8 +4,8 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import KeyIcon from '@mui/icons-material/Key';
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import Footer from '../../components/footer/Footer';
-import beeKeeping from '../../assets/oftac1.jpeg';
-import Oftac2 from '../../assets/oftac2.jpeg';
+import beeKeeping from '../../assets/oftacBee.jpeg';
+import Oftac2 from '../../assets/oftacAbt.jpeg';
 
 const Home = () => (
     <div>
@@ -90,30 +90,38 @@ const Home = () => (
                 <div className='row'>
                     <div className='col-lg-8 col-sm-12'>
                         <h3>
-                            Support our Future plans
+                            Support our Project
                         </h3>
                         <h6>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
-                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
-                            dolore natus praesentium.
+                            <strong>Organization For Transforming African Communities</strong> seeks 
+                            for a grant of <strong>$20,425</strong> for a development of the ongoing  
+                            <strong> bee keeping project</strong> with machinery and store construction 
+                            to support the ongoing projects in <strong>Kyangwali refugee camp</strong>.
                         </h6>
-                        <p>
+                        <div className='pt-2'>
+                            <h5>Project Overview:</h5>
+                            <p>
+                                The project proposal focuses on bee keeping to increase honey production, 
+                                pollination, reduce malnutrition in Kyangwali refugee camp and provide 
+                                sustainable livelihoods for the local communities in rural areas. This 
+                                project seeks to obtain funding for creating a bee keeping enterprise, 
+                                purchasing bee keeping equipment, providing training, generating income, 
+                                and ensuring the preservation and protection of bee populations. By 
+                                creating a sustainable bee keeping enterprise, this project aims to 
+                                address the challenges of poverty, food insecurity, and dwindling bee 
+                                populations.
+                            </p>
+                        </div>
+                        {/* <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
                             iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
                             dolore natus praesentium.
-                        </p>
-                        <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
                             iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
                             dolore natus praesentium.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
-                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
-                            dolore natus praesentium.
-                        </p>
+                        </p> */}
                     </div>
                     <div className='col-lg-4 col-sm-12'>
                         <img
