@@ -42,13 +42,19 @@ const ListProjects = () => {
                     <h2>List of Projects</h2>
                     <ul>
                         {projects.map((project) => (
-                            <li key={project._id}>
+                            <li key={project._id} className=''>
                                 <h3>{project.title}</h3>
-                                <p>{project.content}</p>
                                 <img src={`https://oftac-backend.onrender.com/uploads/${project.img}`} alt={project.title} />
-                                <button onClick={() => handleDelete(project._id)}>Delete</button>
+                                <p>{project.content}</p>
+                                <button 
+                                    onClick={() => handleDelete(project._id)}
+                                    className='btn btn-lg btn-danger fw-bold'
+                                >
+                                    Delete
+                                </button>
                                 {/* Add an update button that opens a popup form for updating the project */}
                                 {/* <button onClick={() => handleUpdate(project)}>Update</button> */}
+                                <hr />
                             </li>
                         ))}
                     </ul>

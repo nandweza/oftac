@@ -2,8 +2,46 @@ import './contact.css';
 
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
+import { useState } from 'react';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [successMessage, setSuccessMessage] = useState('');
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+            const response = await fetch('https://oftac-backend.onrender.com/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+    
+            if (response.ok) {
+                setSuccessMessage('Email sent successfully.');
+            } else {
+                setSuccessMessage('Failed to send email. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error sending email:', error);
+            setSuccessMessage('An error occurred while sending the email.');
+        }
+    };
+    
     return (
         <div>
             <Navbar />
@@ -32,14 +70,17 @@ const Contact = () => {
                             <p>Email: oftacorganisation@yahoo.com</p>
                         </div>
                         <div className='col-lg-6 col-sm-12'>
-                            <form action='' method='post'>
+                            <form onSubmit={handleSubmit} method='post'>
+                                {successMessage && <p className="text-success">{successMessage}</p>}
                                 <div className="row">
                                     <div className="col">
                                         <div className="form-group">
                                             <input 
                                                 type="text" 
                                                 id="name" 
-                                                name="name" 
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleInputChange}
                                                 className="form-control p-2" 
                                                 placeholder="Enter your Name" 
                                             />
@@ -50,7 +91,9 @@ const Contact = () => {
                                             <input 
                                                 type="email" 
                                                 id="email" 
-                                                name="email" 
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleInputChange}
                                                 className="form-control p-2" 
                                                 placeholder="Enter your Email" 
                                             />
@@ -62,6 +105,8 @@ const Contact = () => {
                                         type="text" 
                                         id="subject" 
                                         name="subject" 
+                                        value={formData.subject}
+                                        onChange={handleInputChange}
                                         className="form-control p-2" 
                                         placeholder="Subject" 
                                     />
@@ -70,6 +115,8 @@ const Contact = () => {
                                     <textarea 
                                         name="message" 
                                         id="message" 
+                                        value={formData.message}
+                                        onChange={handleInputChange}
                                         cols="10" 
                                         rows="5" 
                                         className="form-control" 

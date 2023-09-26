@@ -44,11 +44,17 @@ const ListPosts = () => {
                         {posts.map((post) => (
                             <li key={post._id}>
                                 <h3>{post.title}</h3>
-                                <p>{post.content}</p>
                                 <img src={`https://oftac-backend.onrender.com/uploads/${post.img}`} alt={post.title} />
-                                <button onClick={() => handleDelete(post._id)}>Delete</button>
+                                <p>{post.content}</p>
+                                <button 
+                                    onClick={() => handleDelete(post._id)}
+                                    className='btn btn-lg btn-danger fw-bold'
+                                >
+                                    Delete
+                                </button>
                                 {/* Add an update button that opens a popup form for updating the post */}
                                 {/* <button onClick={() => handleUpdate(post)}>Update</button> */}
+                                <hr />
                             </li>
                         ))}
                     </ul>

@@ -1,0 +1,8 @@
+form {
+    width: 100%;
+    height: auto;
+    padding: auto 30px;
+    .content {
+        height: 200px;
+    }
+}

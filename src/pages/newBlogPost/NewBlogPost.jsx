@@ -168,6 +168,7 @@ const NewBlogPost = () => {
                 <ReactQuill
                     value={formData.content}
                     onChange={(value) => setFormData({ ...formData, content: value })}
+                    className='content'
                 />
             </div>
             <div className='p-2'>

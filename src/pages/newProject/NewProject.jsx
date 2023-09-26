@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './newProject.css';
+import ReactQuill from 'react-quill'; // Import ReactQuill
+import 'react-quill/dist/quill.snow.css';
 
 const NewProject = () => {
     const [formData, setFormData] = useState({
@@ -56,7 +58,7 @@ const NewProject = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className=''>
             <h5>Add Project Details</h5>
             <div className='form-group p-2'>
                 <label htmlFor="title">Title:</label>
@@ -70,26 +72,23 @@ const NewProject = () => {
                 />
             </div>
             <div className='form-group p-2'>
-                <label htmlFor="image">Image:</label>
+                <label htmlFor="img">Image:</label>
                 <input
                     type="file"
                     id="img"
                     name="img"
+                    accept='image/*'
                     onChange={handleChange}
                     className='form-control'
                 />
             </div>
             <div className='form-group p-2'>
                 <label htmlFor="content">Content:</label>
-                <textarea
-                    id="content"
-                    name="content"
+                <ReactQuill
                     value={formData.content}
-                    onChange={handleChange}
-                    className='form-control'
-                    cols="10"
-                    rows="5"
-                ></textarea>
+                    onChange={(value) => setFormData({ ...formData, content: value })}
+                    className='content'
+                />
             </div>
             <div className='p-2'>
                 <button type="submit">Submit</button>

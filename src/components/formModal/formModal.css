@@ -4,18 +4,18 @@
     align-items: center;
     background-color: whitesmoke;
     padding: 10px;
-    margin: 100px 300px;
+    margin: 80px 100px 0px 250px;
     position: relative;
 }
   
 .project-modal {
-    width: 60%;
-    height: 500px;
+    width: 70%;
+    height: 530px;
 }
   
 .blog-modal {
-    width: 60%;
-    height: 500px;
+    width: 70%;
+    height: 530px;
 } 
 
 .close-button {
@@ -29,5 +29,5 @@
     color: #000; /* Set the color you prefer */
     padding: 5px 10px; /* Add padding for spacing */
     z-index: 1; /* Ensure the button appears above the modal content */
-  }
+}
   
