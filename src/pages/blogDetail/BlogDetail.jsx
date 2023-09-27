@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
+import ReactHtmlParser from "react-html-parser";
 
 const PostDetail = () => {
     const { postId } = useParams(); // Access the post ID from the URL
@@ -35,7 +36,7 @@ const PostDetail = () => {
                         />
                         <h2 className='text-center'>{post.title}</h2>
                         <p className='text-center text-muted'>{post.createdAt.toLocaleString()}</p>
-                        <p className='pt-2'>{post.content}</p>
+                        <p className='pt-2'>{ReactHtmlParser(post.content)}</p>
                     </div>
                 ) : (
                     <p>Loading news details...</p>

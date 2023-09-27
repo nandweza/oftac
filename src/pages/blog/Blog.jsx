@@ -22,6 +22,7 @@ const Blog = () => {
 
         fetchPosts();
     }, []);
+
     return (
         <div>
             <Navbar />

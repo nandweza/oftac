@@ -90,8 +90,13 @@ const NewProject = () => {
                     className='content'
                 />
             </div>
-            <div className='p-2'>
-                <button type="submit">Submit</button>
+            <div className='d-grid gap-2'>
+                <button 
+                    type="submit"
+                    className='btn btn-lg btn-dark mt-5'
+                >
+                    Submit
+                </button>
             </div>
         </form>
     );

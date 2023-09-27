@@ -1,5 +1,6 @@
 import React from 'react';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ReactHtmlParser from "react-html-parser";
 
 // Helper function to truncate text to a specified length
 const truncateText = (text, maxLength) => {
@@ -29,7 +30,7 @@ const ProjectCard = ({ project }) => {
                     </div>
                     <div className='col-lg-6 col-sm-12 p-2'>
                         <h4 className='px-2'>{project.title}</h4>
-                        <p className='p-2'>{truncatedContent}</p>
+                        <p className='p-2'>{ReactHtmlParser(truncatedContent)}</p>
                         <a href={`/#/project/${project._id}`} className='p-2'>
                             Read More <ArrowRightAltIcon />
                         </a>
