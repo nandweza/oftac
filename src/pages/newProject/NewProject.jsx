@@ -49,7 +49,7 @@ const NewProject = () => {
     
             // Handle success, reset the form, or navigate to another page
             console.log('Project added:', response.data);
-            setFormData({ title: '', img: '', content: '' });
+            setFormData({ title: '', img: null, content: '' });
         } catch (error) {
             // Handle error, display a message to the user
             console.error('Error adding project:', error);

@@ -3,6 +3,7 @@ import Topbar from '../../components/topbar/Topbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import ReactHtmlParser from "react-html-parser";
 
 const ListPosts = () => {
     const [posts, setPosts] = useState([]);
@@ -45,7 +46,7 @@ const ListPosts = () => {
                             <li key={post._id}>
                                 <h3>{post.title}</h3>
                                 <img src={`https://oftac-backend.onrender.com/uploads/${post.img}`} alt={post.title} />
-                                <p>{post.content}</p>
+                                <div>{ReactHtmlParser(post.content)}</div>
                                 <button 
                                     onClick={() => handleDelete(post._id)}
                                     className='btn btn-lg btn-danger fw-bold'

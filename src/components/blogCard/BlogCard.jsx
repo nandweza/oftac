@@ -25,9 +25,9 @@ const BlogCard = ({ post }) => {
                 height='200'
             />
             <h5 className='p-2'>{post.title}</h5>
-            <p className='p-2'>
+            <div className='p-2'>
                 {ReactHtmlParser(truncatedContent)}
-            </p>
+            </div>
             <a href={`/#/news/${post._id}`} className='p-2'>
                 Read More <ArrowRightAltIcon />
             </a>
