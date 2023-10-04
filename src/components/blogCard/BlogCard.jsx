@@ -19,7 +19,7 @@ const BlogCard = ({ post }) => {
     return (
         <div className='card'>
             <img
-                src={`/uploads/${post.img}`}
+                src={post.img}
                 alt={post.title}
                 width='100%'
                 height='200'

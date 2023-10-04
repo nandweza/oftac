@@ -7,8 +7,26 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Logo from '../../assets/oftac.png';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Footer = () => {
+    const [latestBlogPosts, setLatestBlogPosts] = useState([]);
+
+    useEffect(() => {
+        // Fetch the three latest blog post titles from your backend
+        const fetchLatestBlogPosts = async () => {
+            try {
+                const response = await axios.get('https://oftac-backend.onrender.com/api/post');
+                const latestTitles = response.data.slice(0, 3).map((post) => post.title);
+                setLatestBlogPosts(latestTitles);
+            } catch (error) {
+                console.error('Error fetching latest blog posts:', error);
+            }
+        };
+
+        fetchLatestBlogPosts();
+    }, []);
     return (
         <div>
             <div class="container">
@@ -22,7 +40,7 @@ const Footer = () => {
                     </div>
                     <div className='content py-3 smx-screen-mt'>
                         <h5 className='my-title pb-2'>Latest News<span className='title-line'></span></h5>
-                        <a href='/#'>
+                        {/* <a href='/#'>
                             <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
                         </a>
                         <a href='/#'>
@@ -30,7 +48,12 @@ const Footer = () => {
                         </a>
                         <a href='/#'>
                             <h6>Lorem Ipsum <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/> </h6>
-                        </a>
+                        </a> */}
+                        {latestBlogPosts.map((title, index) => (
+                            <a key={index} href='/#'>
+                                <h6>{title} <ArrowRightAltIcon sx={{ fontSize: 30, color: 'rgb(226, 66, 66)' }}/></h6>
+                            </a>
+                        ))}
                     </div>
                     <div className='content py-3 sm-screen-mt'>
                         <h5 className='my-title pb-2'>Quick Links<span className='title-line'></span></h5>
