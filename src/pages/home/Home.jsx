@@ -92,12 +92,12 @@ const Home = () => (
                         <h3>
                             Support our Project
                         </h3>
-                        <h6>
+                        {/*<h6>
                             <strong>Organization For Transforming African Communities</strong> seeks 
                             for a grant of <strong>$20,425</strong> for a development of the ongoing  
                             <strong> bee keeping project</strong> with machinery and store construction 
                             to support the ongoing projects in <strong>Kyangwali refugee camp</strong>.
-                        </h6>
+                        </h6>*/}
                         <div className='pt-2'>
                             <h5>Project Overview:</h5>
                             <p>
