@@ -110,16 +110,6 @@ const Home = () => (
                                 populations.
                             </p>
                         </div>
-                        {/* <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
-                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
-                            dolore natus praesentium.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Quisquam inventore nobis dolores dolorem vel fugiat neque ipsum ut 
-                            iste iusto eaque, sapiente, distinctio fuga aliquam dignissimos deserunt 
-                            dolore natus praesentium.
-                        </p> */}
                     </div>
                     <div className='col-lg-4 col-sm-12'>
                         <img
