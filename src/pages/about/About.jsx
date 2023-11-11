@@ -7,6 +7,10 @@ import Onen from '../../assets/Onen.png';
 import Samuel from '../../assets/Samuel.png';
 import Partner from '../../assets/partner.png';
 import Oftac2 from '../../assets/oftacAbt.jpeg';
+import Melinda from '../../assets/Melinda.jpeg';
+import Damour from '../../assets/Damour.jpeg';
+import Sharon from '../../assets/Sharon.jpeg';
+import Tirza from '../../assets/Tirza.jpeg';
 
 const About = () => {
     return (
@@ -165,49 +169,49 @@ const About = () => {
                     <div className='board-grid'>
                         <div className='card'>
                             <img 
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                src={Melinda}
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
-                                <h6>Lorem Ipsum</h6>
+                                <h6>Melinda Hennagir</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                src={Damour}
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
-                                <h6>Lorem Ipsum</h6>
+                                <h6>Tusingwire Damour Enriques</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                src={Sharon}
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
-                                <h6>Lorem Ipsum</h6>
+                                <h6>Sharon Small</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                src={Tirza}
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
-                                <h6>Lorem Ipsum</h6>
+                                <h6>Tirza Small</h6>
                                 <p>Lorem Ipsum</p>
                             </div>
                         </div>
