@@ -3,14 +3,14 @@ import './about.css';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 
-import Onen from '../../assets/Onen.png';
-import Samuel from '../../assets/Samuel.png';
+// import Onen from '../../assets/Onen.png';
+// import Samuel from '../../assets/Samuel.png';
 import Partner from '../../assets/partner.png';
 import Oftac2 from '../../assets/oftacAbt.jpeg';
-import Melinda from '../../assets/Melinda.jpeg';
-import Damour from '../../assets/Damour.jpeg';
-import Sharon from '../../assets/Sharon.jpeg';
-import Tirza from '../../assets/Tirza.jpeg';
+// import Melinda from '../../assets/Melinda.jpeg';
+// import Damour from '../../assets/Damour.jpeg';
+// import Sharon from '../../assets/Sharon.jpeg';
+// import Tirza from '../../assets/Tirza.jpeg';
 
 const About = () => {
     return (
@@ -71,7 +71,7 @@ const About = () => {
                         <div className='team-grid'>
                             <div className='card'>
                                 <img 
-                                    src={Onen}
+                                    src='Onen.png'
                                     alt=''
                                     width='100%'
                                     height='200'
@@ -83,13 +83,13 @@ const About = () => {
                             </div>
                             <div className='card'>
                                 <img 
-                                    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                    src='Haruna.jpeg'
                                     alt=''
                                     width='100%'
                                     height='200'
                                 />
                                 <div className='text-center'>
-                                    <h6>Lorem Ipsum</h6>
+                                    <h6>Ramazani Turinayo Haruna</h6>
                                     <p>Lorem Ipsum</p>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ const About = () => {
                     <div className='col-lg-4 col-md-6 col-sm-12 pb-2'>
                         <div className='card sm-screen-card'>
                             <img 
-                                src={Samuel} 
+                                src='Samuel.png'
                                 alt=''
                                 width='100%'
                                 height='350'
@@ -169,62 +169,62 @@ const About = () => {
                     <div className='board-grid'>
                         <div className='card'>
                             <img 
-                                src={Melinda}
+                                src='Melinda.jpeg'
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
                                 <h6>Melinda Hennagir</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Member</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src={Damour}
+                                src='Damour.jpeg'
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
                                 <h6>Tusingwire Damour Enriques</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Member</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src={Sharon}
+                                src='Sharon.jpeg'
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
                                 <h6>Sharon Small</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Member</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src={Tirza}
+                                src='Tirza.jpeg'
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
                                 <h6>Tirza Small</h6>
-                                <p>Lorem Ipsum</p>
+                                <p>Member</p>
                             </div>
                         </div>
                         <div className='card'>
                             <img 
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTWtZjV_YXCgbJr1SNLAA_Px-nz8eacMrlw&usqp=CAU'
+                                src='Khalid.jpeg'
                                 alt=''
                                 width='100%'
                                 height='200'
                             />
                             <div className='text-center'>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum</p>
+                                <h6>Daniel Ameny</h6>
+                                <p>Member</p>
                             </div>
                         </div>
                     </div>
